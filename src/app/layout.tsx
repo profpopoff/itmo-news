@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import Header from './Header'
+import Header from '../components/Header/Header'
 
 export default function RootLayout({
   children,
@@ -11,7 +11,7 @@ export default function RootLayout({
       <head />
       <body>
         <Header />
-        <main>{children}</main>
+        <main className='container'>{children}</main>
       </body>
     </html>
   )
