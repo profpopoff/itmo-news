@@ -1,9 +1,0 @@
-.title {
-   margin-block: 1em;
-}
-
-@media screen and (max-width: 48rem) {
-   .title {
-      text-align: center;
-   }
-}
