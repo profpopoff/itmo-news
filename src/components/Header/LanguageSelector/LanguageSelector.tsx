@@ -1,12 +1,14 @@
-'use client'
-
+import { selectLanguage, setLanguage } from '@/redux/slices/language'
 import { useEffect, useRef, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import styles from './LanguageSelector.module.css'
 
 export default function LanguageSelector() {
 
+   const currentLanguage = useSelector(selectLanguage)
+   const dispatch = useDispatch()
+
    const [isAcrive, setIsActive] = useState(false)
-   const [currentLanguage, setCurrentLanguage] = useState('Рус')
 
    const optionsRef = useRef<HTMLDivElement>(null)
 
@@ -25,7 +27,7 @@ export default function LanguageSelector() {
    }, [isAcrive])
 
    const handleChange = (event: React.FormEvent<HTMLDivElement>) => {
-      setCurrentLanguage((event.target as HTMLInputElement).value)
+      dispatch(setLanguage((event.target as HTMLInputElement).value))
    }
 
    return (

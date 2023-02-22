@@ -1,10 +1,21 @@
 .header {
+   height: 3.5rem;
    background: linear-gradient(90deg, #3951E7 20.77%, #832AB9 91.64%);
    padding-block: 1rem;
 }
 
 .wrapper {
+   height: 100%;
    display: flex;
    justify-content: space-between;
    align-items: center;
+}
+
+.logo {
+   display: flex;
+   height: 1.5rem;
+}
+
+.logo img {
+   object-fit: contain;
 }

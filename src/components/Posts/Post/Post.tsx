@@ -1,8 +1,13 @@
+import { selectLanguage } from '@/redux/slices/language'
+import { useSelector } from 'react-redux'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './Post.module.css'
 
 export default function Post({ id, title, image, date }: { id: number, title: string, image: string, date: Date }) {
+
+   const currentLanguage = useSelector(selectLanguage)
+
    return (
       <Link href={`/event/${id}`} className={styles.post}>
          <div className={styles.image}>
@@ -16,7 +21,7 @@ export default function Post({ id, title, image, date }: { id: number, title: st
             />
          </div>
          <div className={styles.headline}>
-            <p className={styles.date}>{new Date(date).toLocaleDateString('ru', { year: "numeric", month: "long", day: "numeric" })}</p>
+            <p className={styles.date}>{new Date(date).toLocaleDateString(currentLanguage === 'Eng' ? 'en' : 'ru', { year: "numeric", month: "long", day: "numeric" })}</p>
             <h2 title={title}>{title}</h2>
          </div>
       </Link>

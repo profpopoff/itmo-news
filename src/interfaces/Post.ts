@@ -9,6 +9,7 @@ export interface Post {
    parent_category: ParentCategory
    category: Category
    url: string
+   lead?: string
 }
 
 export interface ParentCategory {
