@@ -1,6 +1,12 @@
 .posts {
    display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-   gap: 2.5em 2em;
+   grid-template-columns: repeat(3, 1fr);
+   gap: clamp(1.5em, 2.75vw, 2em);
    margin-bottom: 4em;
+}
+
+@media screen and (max-width: 64rem) {
+   .posts {
+      grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+   }
 }

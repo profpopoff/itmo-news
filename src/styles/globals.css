@@ -2,6 +2,7 @@
 
 body {
    font-family: system-ui;
+   font-size: clamp(.8rem, 2vw, 1rem);
 }
 
 .container {

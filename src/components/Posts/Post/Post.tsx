@@ -11,6 +11,7 @@ export default function Post({ id, title, image, date }: { id: number, title: st
                src={image}
                fill
                priority
+               sizes="(max-width: 557px) 100vw,(max-width: 848px) 50vw, 33vw"
                alt={title}
             />
          </div>

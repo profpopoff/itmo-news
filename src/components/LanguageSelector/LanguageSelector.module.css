@@ -5,9 +5,9 @@
 .selectButton {
    display: flex;
    align-items: center;
-   gap: .375em;
+   gap: .375rem;
    padding: 0;
-   padding-left: .5em;
+   padding-left: .5rem;
    background-color: transparent;
    border: none;
    color: #fff;
@@ -24,12 +24,12 @@
 }
 
 .selectButton span {
-   width: 2em;
-   font-size: .95em;
+   width: 2rem;
+   font-size: .95rem;
 }
 
 .flag {
-   width: 1.5em;
+   width: 1.5rem;
    aspect-ratio: 1;
    border-radius: 50%;
    border: 1px solid #D4D6D7;
@@ -41,6 +41,7 @@
    display: flex;
    flex-direction: column;
    width: 100%;
+   z-index: 1;
    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
    transition: all .15s ease-in-out;
 
@@ -60,7 +61,7 @@
 }
 
 .option {
-   height: 2em;
+   height: 2rem;
    width: 100%;
 }
 
@@ -71,10 +72,10 @@
 .label {
    display: flex;
    align-items: center;
-   gap: .5em;
+   gap: .5rem;
    width: 100%;
    height: 100%;
-   padding-inline: .5em;
+   padding-inline: .5rem;
    font-weight: 600;
    cursor: pointer;
 }
