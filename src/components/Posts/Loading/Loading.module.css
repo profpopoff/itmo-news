@@ -1,0 +1,15 @@
+.post {
+   cursor: default;
+   overflow: hidden;
+}
+
+.wrapper {
+   filter: blur(.2rem);
+}
+
+.greyArea {
+   display: inline-block;
+   width: 100%;
+   height: 100%;
+   background-color: grey;
+}
