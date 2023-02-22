@@ -13,7 +13,7 @@ export default function Home() {
    const eventsdata = useSelector(selectData)
    const currentLanguage = useSelector(selectLanguage)
 
-   const [isLoading, setIsLoading] = useState(false)
+   const [isLoading, setIsLoading] = useState(true)
 
    useEffect(() => {
       const getData = async () => {
