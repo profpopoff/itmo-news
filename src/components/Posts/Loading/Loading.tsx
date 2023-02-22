@@ -6,7 +6,7 @@ export default function Loading() {
    return (
       <div className={postsStyles.posts}>
          {[...Array(9)].map((i) => (
-            <div className={`${postStyles.post} ${styles.post}`}>
+            <div key={i} className={`${postStyles.post} ${styles.post}`}>
                <div className={styles.wrapper}>
 
                   <div className={postStyles.image}>
